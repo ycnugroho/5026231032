@@ -5,11 +5,11 @@ use App\Http\Controllers\Coba;
 
 //function
 Route::get('/', function () {
-    return view('welcome');
+    return view('frontend');
 });
 
-Route::get('/selamat', function () {
-    return view('welcome');
+Route::get('/5026231032', function () {
+    return view('frontend');
 });
 
 Route::get('halo', function () {
@@ -21,3 +21,38 @@ Route::get('blog', function () {
 });
 
 Route::get('hello',[Coba::class,'helloworld']);
+
+Route::get('/bootstrap1', function () {
+    return view('bootstrap1');
+});
+
+Route::get('/bootstrap2', function () {
+    return view('bootstrap2');
+});
+
+Route::get('/first', function () {
+    return view('first');
+});
+
+Route::get('/js1', function () {
+    return view('js1');
+});
+
+Route::get('/js2', function () {
+    return view('js2');
+});
+
+Route::get('/linktree-honda', function () {
+    return view('linktree-honda');
+});
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
+
+
+

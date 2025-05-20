@@ -1,0 +1,33 @@
+body {
+   font-family: "Oswald";
+    background-color:azure;
+    color: gray;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+p { 
+   text-decoration: solid;
+}
+
+a:link {
+   color : blue;
+   text-decoration: none;
+}
+
+a:hover {
+   color : red;
+   text-decoration: double;
+   font-weight: bold;
+}
+
+a:visited {
+   color : gray;
+   text-decoration: none;
+}
+
+.kalimatpembuka {
+   font-size:x-large;
+   border:chocolate;
+   border-radius: 50px;
+}
