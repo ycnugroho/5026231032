@@ -2,12 +2,12 @@
 @extends('blog/master')
 
 @section('title','Halaman Blog')
-<!-- isi bagian judul halaman -->
+<!-- Isi bagian judul halaman -->
 <!-- cara penulisan isi section yang pendek -->
 @section('judul_halaman', 'Halaman Home')
 
 
-<!-- isi bagian konten -->
+<!-- Isi bagian konten -->
 <!-- cara penulisan isi section yang panjang -->
 @section('konten')
 
