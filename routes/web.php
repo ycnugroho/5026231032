@@ -100,3 +100,5 @@ Route::post('/pegawai/update',[PegawaiDBController::class,'update']);
 #CRUD - Hapus
 Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class,'hapus']);
 
+
+Route::get('/pegawai/cari',[PegawaiDBController::class,'cari']);
