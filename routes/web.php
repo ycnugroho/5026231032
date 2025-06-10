@@ -5,6 +5,7 @@ use App\Http\Controllers\Coba;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\PenggarisController;
 
 //function
 Route::get('/', function () {
@@ -102,3 +103,12 @@ Route::get('/pegawai/hapus/{id}',[PegawaiDBController::class,'hapus']);
 
 
 Route::get('/pegawai/cari',[PegawaiDBController::class,'cari']);
+
+// Tugas pertemuan 14
+Route::get('/latihan1', [PenggarisController::class, 'index']);
+Route::get('/penggaris/tambah', [PenggarisController::class, 'tambah']);
+Route::post('/penggaris/store', [PenggarisController::class, 'store']);
+Route::get('/penggaris/edit/{id}', [PenggarisController::class, 'edit']);
+Route::post('/penggaris/update', [PenggarisController::class, 'update']);
+Route::get('/penggaris/hapus/{id}', [PenggarisController::class, 'hapus']);
+
