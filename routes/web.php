@@ -7,6 +7,8 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\PenggarisController;
 use App\Http\Controllers\KaryawanController;
+use App\Http\Controllers\TrafficController;
+use App\Http\Controllers\keranjangbelanjaDBController;
 
 
 //function
@@ -119,6 +121,13 @@ Route::get('/latihan3', [KaryawanController::class, 'index'])->name('karyawan.in
 Route::get('/karyawan/tambah', [KaryawanController::class, 'create']);
 Route::post('/karyawan/store', [KaryawanController::class, 'store']);
 Route::delete('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'destroy'])->name('karyawan.destroy');
+
+//Siap UAS
+Route::get('/latihan2', [TrafficController::class, 'index']);
+Route::get('/keranjangbelanja', [keranjangbelanjaDBController::class, 'index']);
+Route::get('/keranjangbelanja/tambah', [keranjangbelanjaDBController::class, 'tambah']);
+Route::post('/keranjangbelanja/store', [keranjangbelanjaDBController::class, 'store']);
+Route::get('/keranjangbelanja/hapus/{id}', [keranjangbelanjaDBController::class,'hapus']);
 
 
 
