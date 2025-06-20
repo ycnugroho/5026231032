@@ -9,6 +9,8 @@ use App\Http\Controllers\PenggarisController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\TrafficController;
 use App\Http\Controllers\keranjangbelanjaDBController;
+use App\Http\Controllers\NilaiController;
+
 
 
 //function
@@ -128,6 +130,12 @@ Route::get('/keranjangbelanja', [keranjangbelanjaDBController::class, 'index']);
 Route::get('/keranjangbelanja/tambah', [keranjangbelanjaDBController::class, 'tambah']);
 Route::post('/keranjangbelanja/store', [keranjangbelanjaDBController::class, 'store']);
 Route::get('/keranjangbelanja/hapus/{id}', [keranjangbelanjaDBController::class,'hapus']);
+
+// EAS PWEB
+Route::get('/eas', [NilaiController::class,'index']);
+Route::get('/eas/tambah', [NilaiController::class,'create']);
+Route::post('/eas/store', [NilaiController::class,'store']);
+
 
 
 
